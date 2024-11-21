@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lista de Análises de Desperdício</title>
+    <link rel="stylesheet" th:href="@{/css/style.css}">
+</head>
+<body>
+<header>
+    <h1>Análises de Desperdício Disponíveis</h1>
+    <div class="btn-group">
+        <a href="/home" class="btn">Voltar para Home</a>
+        <a href="/logout" class="btn btn-danger">Logout</a>
+    </div>
+</header>
+
+<div class="container">
+    <div class="btn-group">
+        <a href="/analisesDesperdicio/cadastrar" class="btn">Cadastrar Nova Análise de Desperdício</a>
+    </div>
+
+    <table>
+        <thead>
+        <tr>
+            <th>ID</th>
+            <th>Nome do Produto</th>
+            <th>Quantidade Desperdiçada</th>
+            <th>Unidade de Medida</th>
+            <th>Motivo do Desperdício</th>
+            <th>Ações</th>
+        </tr>
+        </thead>
+        <tbody>
+        <tr th:each="analise : ${analises}">
+            <td th:text="${analise.id}"></td>
+            <td th:text="${analise.nomeProduto}"></td>
+            <td th:text="${analise.quantidadeDesperdiciada}"></td>
+            <td th:text="${analise.unidadeMedida}"></td>
+            <td th:text="${analise.motivoDesperdicio}"></td>
+            <td>
+                <a th:href="@{/analisesDesperdicio/{id}(id=${analise.id})}" class="btn">Detalhes</a> |
+                <a th:href="@{/analisesDesperdicio/editar/{id}(id=${analise.id})}" class="btn">Editar</a> |
+                <a th:href="@{/analisesDesperdicio/deletar/{id}(id=${analise.id})}" class="btn btn-delete">Deletar</a>
+            </td>
+        </tr>
+        </tbody>
+    </table>
+</div>
+
+<footer>
+    <p>&copy; 2024 Hydrio Mind. Todos os direitos reservados.</p>
+</footer>
+</body>
+</html>

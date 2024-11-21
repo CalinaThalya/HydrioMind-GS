@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Lista de Recomendações</title>
+  <link rel="stylesheet" th:href="@{/css/style.css}">
+</head>
+<body>
+<header>
+  <h1>Lista de Recomendações</h1>
+  <div class="btn-group">
+    <a href="/home" class="btn">Voltar para Home</a>
+    <a href="/logout" class="btn btn-danger">Logout</a>
+  </div>
+</header>
+
+<div class="container">
+  <div class="btn-group">
+    <a href="/recomendacoes/cadastrar" class="btn">Cadastrar Nova Recomendação</a>
+  </div>
+
+  <table>
+    <thead>
+      <tr>
+        <th>ID</th>
+        <th>Nome da Recomendação</th>
+        <th>Descrição</th>
+        <th>Ações</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr th:each="recomendacao : ${produtos}">
+        <td th:text="${recomendacao.id}"></td>
+        <td th:text="${recomendacao.nomeRecomendacao}"></td>
+        <td th:text="${recomendacao.descricaoRecomendacao}"></td>
+        <td>
+          <a th:href="@{/recomendacoes/{id}(id=${recomendacao.id})}" class="btn">Detalhes</a>
+          <a th:href="@{/recomendacoes/editar/{id}(id=${recomendacao.id})}" class="btn">Editar</a> |
+          <a th:href="@{/recomendacoes/deletar/{id}(id=${recomendacao.id})}" class="btn btn-delete">Deletar</a>
+        </td>
+      </tr>
+    </tbody>
+  </table>
+</div>
+
+<footer>
+  <p>&copy; 2024 Hydrio Mind. Todos os direitos reservados.</p>
+</footer>
+</body>
+</html>

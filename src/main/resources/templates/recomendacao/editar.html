@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Editar Recomendação</title>
+  <link rel="stylesheet" th:href="@{/css/style.css}">
+</head>
+<body>
+<header>
+  <h1>Editar Recomendação</h1>
+  <div class="btn-group">
+    <a href="/recomendacoes/listar" class="btn">Voltar para Lista</a>
+    <a href="/logout" class="btn btn-danger">Logout</a>
+  </div>
+</header>
+
+<div class="container">
+  <form th:action="@{/recomendacoes/editar/{id}(id=${recomendacaoDTO.id})}" th:object="${recomendacaoDTO}" method="post">
+    <input type="hidden" th:field="*{id}" />
+    
+    <div>
+      <label for="nomeRecomendacao">Nome da Recomendação:</label>
+      <input type="text" id="nomeRecomendacao" th:field="*{nomeRecomendacao}" required>
+      <div th:if="${#fields.hasErrors('nomeRecomendacao')}" th:errors="*{nomeRecomendacao}" class="error"></div>
+    </div>
+    
+    <div>
+      <label for="descricaoRecomendacao">Descrição:</label>
+      <textarea id="descricaoRecomendacao" th:field="*{descricaoRecomendacao}" required></textarea>
+      <div th:if="${#fields.hasErrors('descricaoRecomendacao')}" th:errors="*{descricaoRecomendacao}" class="error"></div>
+    </div>
+    
+    
+    <div>
+      <button type="submit" class="btn">Atualizar Recomendação</button>
+    </div>
+  </form>
+</div>
+
+<footer>
+  <p>&copy; 2024 Hydrio Mind. Todos os direitos reservados.</p>
+</footer>
+</body>
+</html>

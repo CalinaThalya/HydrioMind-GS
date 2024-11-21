@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Confirmar Deleção</title>
+    <link rel="stylesheet" th:href="@{/css/style.css}">
+</head>
+<body>
+<header>
+    <h1>Deletar Análise de Desperdício</h1>
+</header>
+
+<div class="container">
+    <h2>Tem certeza que deseja deletar a análise de desperdício para o produto <span th:text="${analise.nomeProduto}"></span>?</h2>
+    <form th:action="@{/analisesDesperdicio/deletar/{id}(id=${analise.id})}" method="post">
+        <button type="submit" class="btn btn-danger">Sim</button>
+    </form>
+    
+    <a href="/analisesDesperdicio/listar" class="btn btn-cancel">Cancelar</a>
+</div>
+
+<footer>
+    <p>&copy; 2024 Hydrio Mind. Todos os direitos reservados.</p>
+</footer>
+</body>
+</html>

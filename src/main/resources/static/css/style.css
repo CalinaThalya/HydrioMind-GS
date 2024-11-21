@@ -1,0 +1,197 @@
+/* Estilo geral */
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #121212; /* Fundo preto */
+    color: #e0e0e0;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start; /* Ajustado para permitir rolagem */
+    align-items: center;
+    min-height: 100vh; /* Permite que o conteúdo cresça */
+    background: linear-gradient(135deg, #000000, #4daa7f); /* Gradiente de preto para vermelho */
+}
+
+/* Estilo do cabeçalho */
+header {
+    background-color: rgba(20, 20, 20, 0.9); /* Fundo escuro e levemente transparente */
+    padding: 20px;
+    text-align: center;
+    border-bottom: 3px solid  #4daa7f; /* Vermelho claro */
+    width: 100%;
+    box-shadow: 0 2px 5px rgba(255, 255, 255, 0.5); /* Sombra sutil */
+}
+
+header h1 {
+    color: #ffffff;
+    margin: 0;
+    font-size: 2.5rem; /* Aumenta o tamanho do título */
+    text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.5); /* Sombra para o texto */
+}
+
+header .btn-group {
+    display: flex;
+    gap: 10px;
+    justify-content: center; /* Centraliza os botões */
+}
+
+/* Estilo do container */
+.container {
+    padding: 20px;
+    width: 100%; /* Garantir que a largura da container preencha a tela */
+    max-width: 1200px; /* Limitar a largura máxima */
+    margin: auto; /* Centraliza a container */
+    background-color: rgba(24, 23, 23, 0.95); /* Fundo escuro e transparente */
+    border-radius: 10px;
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.6); /* Sombras suaves */
+}
+
+/* Estilo da tabela */
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin: 20px 0;
+    background-color: rgba(20, 20, 20, 0.9); /* Transparência no fundo da tabela */
+}
+
+table, th, td {
+    border: 1px solid #333;
+}
+
+th, td {
+    padding: 10px;
+    text-align: left;
+}
+
+th {
+    background-color: #049766; /* Vermelho claro */
+    color: #ffffff;
+}
+
+td {
+    background-color: rgba(30, 30, 30, 0.9); /* Transparência nas células */
+}
+
+/* Estilo dos botões */
+.btn {
+    background-color: #049766; /* Vermelho claro */
+    color: #000000;
+    border: none;
+    padding: 10px 15px; /* Padding padrão para todos os botões */
+    border-radius: 5px;
+    cursor: pointer;
+    text-decoration: none;
+    display: inline-block;
+    margin: 5px 0;
+    transition: background-color 0.3s, transform 0.2s;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.3); /* Sombra nos botões */
+}
+
+.btn:hover {
+    background-color: #049766; /* Vermelho mais escuro */
+    transform: scale(1.05); /* Leve aumento no hover */
+}
+
+.btn-danger {
+    background-color: #049766;
+    padding: 8px 12px; /* Reduzido padding para diminuir o tamanho do botão */
+    font-size: 0.9rem; /* Diminuindo o tamanho da fonte */
+}
+
+.btn-danger:hover {
+    background-color: #049766;
+}
+
+.btn-cancel {
+    background-color: #6c757d;
+}
+
+.btn-cancel:hover {
+    background-color: #5a6268;
+}
+
+
+/* Estilo do rodapé */
+footer {
+    background-color: rgba(20, 20, 20, 0.9);
+    color: #e0e0e0;
+    padding: 10px;
+    text-align: center;
+    margin-top: auto;
+}
+
+.footer p {
+    margin: 0;
+}
+
+/* Estilo do container do formulário */
+.form-container {
+    background-color: #1e1e1e;
+    padding: 20px;
+    border-radius: 5px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
+    max-width: 400px;
+    width: 100%;
+    margin: 20px auto; /* Centraliza a container do formulário */
+}
+
+/* Estilo do formulário */
+form {
+    margin: 0;
+}
+
+form label {
+    color: #e0e0e0;
+    margin-bottom: 5px;
+}
+
+form input[type="text"],
+form input[type="password"],
+form input[type="email"],
+form input[type="number"] {
+    width: calc(100% - 22px);
+    padding: 10px;
+    border: 1px solid #333;
+    border-radius: 5px;
+    background-color: #333;
+    color: #e0e0e0;
+    margin-bottom: 10px;
+}
+
+form button {
+    background-color: #04503f;
+    color: #fff;
+    border: none;
+    padding: 10px 15px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+    width: 100%;
+}
+
+form button:hover {
+    background-color: #04503f;
+}
+
+/* Rodapé fixo */
+footer {
+    position: relative;
+    bottom: 0;
+    width: 100%;
+}
+
+/* Estilo para animação de entrada */
+.container {
+    animation: fadeIn 0.5s ease-in-out; /* Efeito de fade-in */
+}
+
+/* Keyframes para animação */
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}

@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Cadastrar Nova Recomendação</title>
+  <link rel="stylesheet" th:href="@{/css/style.css}">
+</head>
+<body>
+<header>
+  <h1>Cadastrar Nova Recomendação</h1>
+  <div class="btn-group">
+    <a href="/home" class="btn">Voltar para Home</a>
+    <a href="/logout" class="btn btn-danger">Logout</a>
+  </div>
+</header>
+
+<div class="container">
+  <form th:action="@{/recomendacoes/cadastrar}" method="post" th:object="${recomendacaoDTO}">
+    <div class="form-group">
+      <label for="nomeRecomendacao">Nome da Recomendação:</label>
+      <input type="text" id="nomeRecomendacao" th:field="*{nomeRecomendacao}" class="form-control" required />
+    </div>
+
+    <div class="form-group">
+      <label for="descricaoRecomendacao">Descrição:</label>
+      <input type="text" id="descricaoRecomendacao" th:field="*{descricaoRecomendacao}" class="form-control" required />
+    </div>
+
+    <div class="form-group">
+      <button type="submit" class="btn btn-primary">Cadastrar</button>
+    </div>
+  </form>
+</div>
+
+<footer>
+  <p>&copy; 2024 Hydrio Mind. Todos os direitos reservados.</p>
+</footer>
+</body>
+</html>

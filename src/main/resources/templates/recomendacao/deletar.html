@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Deletar Recomendação</title>
+  <link rel="stylesheet" th:href="@{/css/style.css}">
+</head>
+<body>
+<header>
+  <h1>Deletar Recomendação</h1>
+  <div class="btn-group">
+    <a href="/recomendacoes" class="btn">Voltar para a Lista</a>
+    <a href="/logout" class="btn btn-danger">Logout</a>
+  </div>
+</header>
+
+<div class="container">
+  <h3>Você tem certeza que deseja deletar a recomendação?</h3>
+  <p><strong>Nome da Recomendação:</strong> <span th:text="${recomendacao.nomeRecomendacao}"></span></p>
+  <p><strong>Descrição:</strong> <span th:text="${recomendacao.descricaoRecomendacao}"></span></p>
+
+  <form th:action="@{/recomendacoes/deletar/{id}(id=${recomendacao.id})}" method="post">
+    <button type="submit" class="btn btn-danger">Deletar</button>
+    <a href="/recomendacoes" class="btn">Cancelar</a>
+  </form>
+</div>
+
+<footer>
+  <p>&copy; 2024 Hydrio Mind. Todos os direitos reservados.</p>
+</footer>
+</body>
+</html>

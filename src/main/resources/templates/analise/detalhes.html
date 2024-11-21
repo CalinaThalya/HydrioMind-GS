@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Detalhes da Análise de Desperdício</title>
+    <link rel="stylesheet" th:href="@{/css/style.css}">
+</head>
+<body>
+<header>
+    <h1>Detalhes da Análise de Desperdício</h1>
+    <div class="btn-group">
+        <a href="/analisesDesperdicio/listar" class="btn">Voltar para a Lista</a>
+        <a href="/logout" class="btn btn-danger">Logout</a>
+    </div>
+</header>
+
+<div class="container">
+    <!-- Exibindo os detalhes da análise -->
+    <h3>ID: <span th:text="${analise.id}"></span></h3>
+    <p>Nome do Produto: <span th:text="${analise.nomeProduto}"></span></p>
+    <p>Quantidade Desperdiçada: <span th:text="${analise.quantidadeDesperdiciada}"></span></p>
+    <p>Unidade de Medida: <span th:text="${analise.unidadeMedida}"></span></p>
+    <p>Motivo do Desperdício: <span th:text="${analise.motivoDesperdicio}"></span></p>
+</div>
+
+<footer>
+    <p>&copy; 2024 Hydrio Mind. Todos os direitos reservados.</p>
+</footer>
+</body>
+</html>
