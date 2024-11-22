@@ -42,7 +42,48 @@ HydrioMind é um aplicativo inteligente que não só ajuda a monitorar o consumo
 # Conclusão
 O HydrioMind é um aplicativo inteligente que integra a sustentabilidade com o uso responsável de tecnologias avançadas de IA. Ao focar na redução do desperdício de água e de IAs, o HydrioMind ajuda seus usuários a otimizar recursos, reduzir custos e contribuir com a preservação ambiental. Investir no HydrioMind é investir em um futuro mais eficiente, onde as tecnologias de inteligência artificial atuam em harmonia com as necessidades do planeta, sem desperdícios.
 
+# Instalar o projeto no repositório local
+
+bash
+
+mvn install
+
+# Limpar o projeto
+
+mvn clean
+
+# Para rodar o projeto
+
+mvn spring-boot:run
+
 # EndPoint
+
+*Login*
+http://localhost:8080/req/login
+
+*Cadastrar* 
+http://localhost:8080/req/signup
+
+*Home*
+http://localhost:8080/home
+
+*AnalisesDesperdicio*
+http://localhost:8080/analisesDesperdicio/listar - 
+http://localhost:8080/analisesDesperdicio/cadastrar -
+http://localhost:8080/analisesDesperdicio/1 -
+http://localhost:8080/analisesDesperdicio/editar/7 - 
+http://localhost:8080/analisesDesperdicio/deletar/6
+
+*Recomendacoes*
+http://localhost:8080/recomendacoes/listar - 
+http://localhost:8080/recomendacoes/cadastrar - 
+http://localhost:8080/recomendacoes/4 - 
+http://localhost:8080/recomendacoes/editar/4 - 
+http://localhost:8080/recomendacoes/deletar/4 - 
+
+# Link do video
+
+https://youtu.be/sSsBduC3emc?si=GWAX2VV_L0GJY5WE
 
 # Diagrama de classes
 
