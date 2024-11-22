@@ -39,9 +39,10 @@ HydrioMind é um aplicativo inteligente que não só ajuda a monitorar o consumo
 - Plano de Assinatura e Ads: Implementar um modelo de assinatura para empresas ou usuários que desejam análises mais detalhadas e uma abordagem personalizada para reduzir o desperdício de água.
  
 
-
 # Conclusão
 O HydrioMind é um aplicativo inteligente que integra a sustentabilidade com o uso responsável de tecnologias avançadas de IA. Ao focar na redução do desperdício de água e de IAs, o HydrioMind ajuda seus usuários a otimizar recursos, reduzir custos e contribuir com a preservação ambiental. Investir no HydrioMind é investir em um futuro mais eficiente, onde as tecnologias de inteligência artificial atuam em harmonia com as necessidades do planeta, sem desperdícios.
+
+# EndPoint
 
 # Diagrama de classes
 
