@@ -101,9 +101,11 @@ http://localhost:8080/recomendacoes/editar/4
 *Rota deletar*
 http://localhost:8080/recomendacoes/deletar/4 - 
 
-# Link do video
+# Link do video youtube
 
 https://youtu.be/sSsBduC3emc?si=GWAX2VV_L0GJY5WE
+
+# Link do video Deploy
 
 # Diagrama de classes
 
