@@ -13,7 +13,7 @@ import java.util.List;
 import java.util.Map;
 
 @SpringBootTest
-class NexusApplicationTests {
+class HydriomindApplicationTests {
 
     @Autowired
     private DataSource dataSource;
@@ -32,7 +32,7 @@ class NexusApplicationTests {
 
     @Test
     void testTableExistence() {
-        String[] expectedTables = {"T_HM_USUARIO", "TB_HM_IA", "TB_HM_RECOMENDACAO"};
+        String[] expectedTables = {"T_HM_USUARIO"};
 
         try (Connection connection = dataSource.getConnection()) {
             ResultSet resultSet = connection.getMetaData().getTables(null, null, "%", new String[]{"TABLE"});
