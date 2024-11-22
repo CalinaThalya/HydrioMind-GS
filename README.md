@@ -67,18 +67,38 @@ http://localhost:8080/req/signup
 *Home*
 http://localhost:8080/home
 
-*AnalisesDesperdicio*
-http://localhost:8080/analisesDesperdicio/listar - 
-http://localhost:8080/analisesDesperdicio/cadastrar -
-http://localhost:8080/analisesDesperdicio/1 -
-http://localhost:8080/analisesDesperdicio/editar/7 - 
+* AnalisesDesperdicio
+
+*Rota listar*
+http://localhost:8080/analisesDesperdicio/listar
+
+*Rota cadastrar*
+http://localhost:8080/analisesDesperdicio/cadastrar 
+
+*Rota ID 1*
+http://localhost:8080/analisesDesperdicio/1 
+
+*Rota ID 7*
+http://localhost:8080/analisesDesperdicio/editar/7 
+
+*Rota ID 6*
 http://localhost:8080/analisesDesperdicio/deletar/6
 
-*Recomendacoes*
-http://localhost:8080/recomendacoes/listar - 
-http://localhost:8080/recomendacoes/cadastrar - 
-http://localhost:8080/recomendacoes/4 - 
-http://localhost:8080/recomendacoes/editar/4 - 
+* Recomendacoes
+
+*Rota listar*
+http://localhost:8080/recomendacoes/listar 
+
+*Rota cadastrar*
+http://localhost:8080/recomendacoes/cadastrar
+
+*Rota ID 4*
+http://localhost:8080/recomendacoes/4 
+
+*Rota editar*
+http://localhost:8080/recomendacoes/editar/4
+
+*Rota deletar*
 http://localhost:8080/recomendacoes/deletar/4 - 
 
 # Link do video
