@@ -46,20 +46,20 @@ O HydrioMind é um aplicativo inteligente que integra a sustentabilidade com o u
 
 bash
 
-mvn install
+    mvn install
 
 # Limpar o projeto
 
-mvn clean
+    mvn clean
 
 # Para rodar o projeto
 
-mvn spring-boot:run
+    mvn spring-boot:run
 
 # EndPoint
 
 *Login*
-http://localhost:8080/req/login
+ http://localhost:8080/req/login
 
 *Cadastrar* 
 http://localhost:8080/req/signup
@@ -67,24 +67,24 @@ http://localhost:8080/req/signup
 *Home*
 http://localhost:8080/home
 
-* AnalisesDesperdicio
+* Analise de Desperdicio
 
-*Rota listar*
+*Rota para listar*
 http://localhost:8080/analisesDesperdicio/listar
 
 *Rota cadastrar*
 http://localhost:8080/analisesDesperdicio/cadastrar 
 
-*Rota ID 1*
-http://localhost:8080/analisesDesperdicio/1 
+*Rota para detalhar de acordo com o ID *
+http://localhost:8080/analisesDesperdicio/{id}
 
-*Rota ID 7*
-http://localhost:8080/analisesDesperdicio/editar/7 
+*Rota para editar*
+http://localhost:8080/analisesDesperdicio/editar/{id} 
 
-*Rota ID 6*
+*Rota para deletar*
 http://localhost:8080/analisesDesperdicio/deletar/6
 
-* Recomendacoes
+* Recomendações
 
 *Rota listar*
 http://localhost:8080/recomendacoes/listar 
@@ -92,14 +92,14 @@ http://localhost:8080/recomendacoes/listar
 *Rota cadastrar*
 http://localhost:8080/recomendacoes/cadastrar
 
-*Rota ID 4*
-http://localhost:8080/recomendacoes/4 
+*Rota para detalhar de acordo com o ID*
+http://localhost:8080/recomendacoes/{id}
 
-*Rota editar*
-http://localhost:8080/recomendacoes/editar/4
+*Rota para editar*
+http://localhost:8080/recomendacoes/editar/{id}
 
-*Rota deletar*
-http://localhost:8080/recomendacoes/deletar/4 - 
+*Rota para deletar*
+http://localhost:8080/recomendacoes/deletar/{id} 
 
 # Link do video youtube
 
