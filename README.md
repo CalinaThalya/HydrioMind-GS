@@ -107,6 +107,8 @@ https://youtu.be/sSsBduC3emc?si=GWAX2VV_L0GJY5WE
 
 # Link do video Deploy
 
+https://youtu.be/veN_GFu6Brc
+
 # Diagrama de classes
 
 ![image](https://github.com/user-attachments/assets/3fab4790-b700-4ca9-bfe6-54f3f776fac5)
